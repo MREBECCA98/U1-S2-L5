@@ -1,0 +1,89 @@
+/* Your styles here */
+.bodyColor {
+  background-color: #dae3e05c;
+}
+.box {
+  box-sizing: content-box;
+  background-color: #0a0a4d;
+  width: auto;
+  height: auto;
+}
+.logoAmazon {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 30px;
+  width: 100px;
+}
+.box1 {
+  box-sizing: content-box;
+  background-color: #343475;
+  margin-bottom: 20px;
+}
+
+.barraDiRicerca ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.barraDiRicerca li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.barraDiRicerca a {
+  text-decoration: none;
+  color: white;
+}
+.box2 {
+  box-sizing: content-box;
+  background-color: orangered;
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.box2 h3 {
+  text-align: center;
+  color: white;
+}
+.box2 a {
+  text-decoration: none;
+}
+.Holiday {
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.HolidayGift {
+  background-image: url("../images/bg-image.png");
+  height: 128px;
+  background-size: contain;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.HolidayGift h1 {
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.HolidayGift h2 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.box3 {
+  background-color: white;
+}
+
+.immagini {
+  display: inline-block;
+}
