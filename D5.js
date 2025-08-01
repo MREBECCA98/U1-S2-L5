@@ -98,27 +98,58 @@ console.log("-----------------------------");
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-for (let i = 0; i < cars.length; i++) {
-  const nuovoOggetto = { brand: "", model: "", color: "", trims: "" };
-  cars.push({ nuovoOggetto });
-}
+
+cars.push({ brand: "1", model: "2", color: "blue", trims: ["4", "2"] });
+
 console.log(cars);
+
+for (let i = 0; i < cars.length; i++) {
+  const cancelTrims = cars[i]; //nuova variabile che riprende cars
+  cancelTrims.trims.pop(); // variabile che mi permette di prendere "trims" ed eliminare l'ultimo elemento
+}
+console.log("tolto trims", cars);
+
+console.log("-----------------------------");
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-//const justTrims = []
+const justTrims = []; //nuovo array vuoto
+for (
+  let i = 0;
+  i < cars.length;
+  i++ // counter per far scorrere l'array(cars)
+) {
+  const primo = cars[i]; //nuova variabile collegata a cars
+  justTrims.push(primo.trims[0]); //all'interno dell'array devo mettere qualcosa (.push), dico da dove prenderla (primo) e specifico che cosa prendere (trims (primo elemento, 0))
+}
+console.log("primo elemento trims", justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+for (let i = 0; i < cars.length; i++) {
+  const element = cars[i].color.charAt(0); // charAt divide la stringa in carattere, gli dico di prendere 0(primo)
+  if (element === "b") {
+    console.log("fizz");
+  } else {
+    console.log("buzz");
+  }
+}
+console.log("-----------------------------");
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
 
+let i = 0;
+while (numericArray[i] !== 32) {
+  console.log("valori array fino 32", numericArray[i]); //
+  i++;
+}
+console.log(numericArray[i]);
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
